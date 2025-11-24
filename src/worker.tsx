@@ -4,6 +4,7 @@ import {defineApp} from "rwsdk/worker";
 import {Document} from "@/app/Document";
 import {setCommonHeaders} from "@/app/headers";
 import {Home} from "@/app/pages/Home";
+import Pong from "@/app/pages/Pong";
 
 export type AppContext = {};
 
@@ -16,5 +17,6 @@ export default defineApp([
   render(Document, [
     route("/", () => new Response("Hello from RWSDK")),
     route("/home", Home),
+    route("/ping", Pong),
   ]),
 ]);
