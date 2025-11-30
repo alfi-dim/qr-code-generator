@@ -1,0 +1,29 @@
+{
+  "name": "RedwoodSDK QR Code Generator Project",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "postCreateCommand": "npm install && npm run dev:init",
+  "forwardPorts": [5173],
+  "postStartCommand": "npm run dev",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "typescript.tsl.autoStart": true,
+        "files.watcherExclude": {
+          "**/node_modules/**": true
+        }
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "Prisma.prisma",
+        "ms-vscode.vscode-typescript-next",
+        "cloudflare.vscode-cloudflare"
+      ]
+    },
+    "jetbrains" : {
+      "backend" : "WebStorm"
+    }
+  }
+}
