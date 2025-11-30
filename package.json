@@ -22,10 +22,24 @@
     "types": "tsc"
   },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.11",
+    "@radix-ui/react-collapsible": "^1.1.12",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-separator": "^1.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "@tailwindcss/vite": "^4.1.17",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.554.0",
     "react": "19.3.0-canary-fb2177c1-20251114",
     "react-dom": "19.3.0-canary-fb2177c1-20251114",
     "react-server-dom-webpack": "19.3.0-canary-fb2177c1-20251114",
-    "rwsdk": "1.0.0-beta.32"
+    "rwsdk": "1.0.0-beta.32",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.7",
@@ -34,6 +48,7 @@
     "@types/node": "~24.5.2",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
+    "tw-animate-css": "^1.4.0",
     "typescript": "5.8.3",
     "vite": "7.2.4",
     "wrangler": "4.50.0"
@@ -44,5 +59,9 @@
       "sharp",
       "workerd"
     ]
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
   }
 }

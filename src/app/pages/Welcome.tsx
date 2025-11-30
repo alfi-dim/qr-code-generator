@@ -5,7 +5,8 @@
  * _Feel free to delete this file_
  **/
 
-import { useState } from "react";
+//TODO: replace this with our Homepage later
+import {useState} from "react";
 import styles from "./Welcome.module.css";
 
 export const Welcome = () => {
@@ -46,23 +47,17 @@ export const Welcome = () => {
               </a>
               .
             </li>
-            <li>
-              Join the community to ask questions and share what you’re
-              building.
-            </li>
+            <li>Join the community to ask questions and share what you’re building.</li>
           </ol>
         </section>
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Deploy to Cloudflare</h2>
-          <p>
-            RedwoodSDK runs on Cloudflare Workers. Here’s the quickest way to
-            deploy.
-          </p>
+          <p>RedwoodSDK runs on Cloudflare Workers. Here’s the quickest way to deploy.</p>
           <div className={styles.codeBlock}>
             <span className={styles.codePrompt}>$</span>
             <code className={styles.code}>pnpm release</code>
-            <Copy textToCopy="pnpm release" />
+            <Copy textToCopy="pnpm release"/>
           </div>
           <p>
             Need more detail? Read the{" "}
@@ -82,7 +77,7 @@ export const Welcome = () => {
   );
 };
 
-const Copy = ({ textToCopy }: { textToCopy: string }) => {
+const Copy = ({textToCopy}: { textToCopy: string }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -93,7 +88,7 @@ const Copy = ({ textToCopy }: { textToCopy: string }) => {
   };
 
   return (
-    <button onClick={handleCopy} className={styles.copyButton}>
+    <button onClick={handleCopy} type="button" className={styles.copyButton}>
       {copied ? "Copied!" : "Copy"}
     </button>
   );
